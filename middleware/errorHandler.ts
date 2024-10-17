@@ -3,5 +3,5 @@ import { errorResponse } from "../utils/responses.js";
 
 export const errorHandler = (err:any, req:Request, res:Response, next:NextFunction)=>{
     console.error(err);
-    errorResponse(res,  err.status || 500, err.message || 'Internal Server Error');
+    errorResponse(res, err, 500);
 }

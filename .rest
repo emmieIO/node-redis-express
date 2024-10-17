@@ -1,0 +1,15 @@
+
+POST http://localhost:3000/api/restaurants
+content-type: application/json
+
+{
+    "name": "Better Food",
+    "location": "123 Main St",
+    "cuisines":[
+        "Italian",
+        "Mexican",
+        "Chinese"
+    ]
+}
+
+

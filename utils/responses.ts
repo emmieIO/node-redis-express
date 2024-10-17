@@ -4,6 +4,6 @@ export const successResponse = (res: Response, message: string = "success", data
     return res.status(statusCode).json({ success: true, message, data })
 }
 
-export const errorResponse = (res:Response, error:string = "error", statusCode=500)=>{
+export const errorResponse = (res:Response, error:string = "error", statusCode:number=500)=>{
     return res.status(statusCode).json({success:false,error})
 }
