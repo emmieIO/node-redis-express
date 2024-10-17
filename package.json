@@ -1,0 +1,27 @@
+{
+	"name": "redis-express",
+	"version": "1.0.0",
+	"main": "index.js",
+	"type": "module",
+	"dependencies": {
+		"express": "^4.21.1",
+		"nanoid": "^5.0.7",
+		"redis": "^4.7.0",
+		"zod": "^3.23.8"
+	},
+	"scripts": {
+		"dev": "tsx watch --env-file .env index.ts",
+		"start": "node --env-file .env dist/index.js",
+		"build": "tsc"
+	},
+	"devDependencies": {
+		"@types/express": "^5.0.0",
+		"@types/node": "^22.7.5",
+		"tsx": "^4.19.1",
+		"typescript": "^5.6.3"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": ""
+}
